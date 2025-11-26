@@ -1,3 +1,4 @@
+package ARRAYS;
 public class smallest {
     public static int SmallestNum(int num []){
         for(int i=0;i<num.length;i++){

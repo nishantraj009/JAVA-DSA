@@ -1,3 +1,4 @@
+package ARRAYS;
 public class keycount {
     public static void KeyCount(int numbers[], int key){
         int count = 0;

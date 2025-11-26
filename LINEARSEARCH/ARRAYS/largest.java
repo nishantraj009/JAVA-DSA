@@ -1,3 +1,4 @@
+package ARRAYS;
 public class largest{
     public static int LargestNum(int numbers[]){
         int largest = Integer.MIN_VALUE; // -infinity number

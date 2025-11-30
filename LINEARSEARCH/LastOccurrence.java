@@ -1,4 +1,3 @@
-package ARRAYS;
 public class LastOccurrence {
     
     public static int lastOccurrence(int[] arr, int key) {

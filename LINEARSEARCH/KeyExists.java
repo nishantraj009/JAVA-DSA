@@ -1,4 +1,3 @@
-package ARRAYS;
 public class KeyExists {
 
     public static boolean keyexists(int[] arr, int key) {

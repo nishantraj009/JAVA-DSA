@@ -1,3 +1,4 @@
+
 public class butterfly {
 
     public static void Butterfly(int n) {
@@ -41,3 +42,14 @@ public class butterfly {
         Butterfly(4);
     }
 }
+
+
+
+// *      *
+// **    **
+// ***  ***
+// ********
+// ********
+// ***  ***
+// **    **
+// *      *

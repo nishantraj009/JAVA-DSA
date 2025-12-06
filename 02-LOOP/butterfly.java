@@ -1,9 +1,9 @@
 public class butterfly {
 
     public static void Butterfly(int n) {
-        // Upper Half
+        
         for(int i=1; i<=n; i++) {
-            // Left Stars
+            
             for(int j=1; j<=i; j++) {
                 System.out.print("*");
             }

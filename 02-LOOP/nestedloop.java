@@ -9,7 +9,7 @@ public class nestedloop {
     }
 }
 
-// output
+// output  (rectanglugar)
 
 // ****
 // ****

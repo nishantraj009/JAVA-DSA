@@ -8,7 +8,7 @@ public class Prime {
         int count = 0;
         if(num <= 1){
             System.out.println("not");
-            return; // yahi return kar do
+            return; 
         }
          for(int i=1;i<=num;i++){
              if(num%i==0){

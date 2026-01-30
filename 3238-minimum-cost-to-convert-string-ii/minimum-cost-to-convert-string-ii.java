@@ -20,7 +20,7 @@ class Solution {
         final long INF = (long) 1e18;
         int n = source.length();
 
-        // ---------- Step 1: Collect unique strings ----------
+        
         Set<String> set = new HashSet<>();
         for (String s : original) set.add(s);
         for (String s : changed) set.add(s);
@@ -30,7 +30,7 @@ class Solution {
         Map<String, Integer> id = new HashMap<>();
         for (int i = 0; i < m; i++) id.put(arr.get(i), i);
 
-        // ---------- Step 2: Floyd-Warshall ----------
+        
         long[][] dist = new long[m][m];
         for (int i = 0; i < m; i++) {
             Arrays.fill(dist[i], INF);
@@ -53,7 +53,7 @@ class Solution {
             }
         }
 
-        // ---------- Step 3: Group rules by original string ----------
+       
         Map<String, List<int[]>> rules = new HashMap<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < m; j++) {
@@ -66,21 +66,21 @@ class Solution {
             }
         }
 
-        // ---------- Step 4: Build Trie over originals ----------
+        
         for (String o : rules.keySet()) insert(o, id.get(o));
 
-        // ---------- Step 5: DP ----------
+       
         long[] dp = new long[n + 1];
         Arrays.fill(dp, INF);
         dp[n] = 0;
 
         for (int i = n - 1; i >= 0; i--) {
-            // No operation case
+           
             if (source.charAt(i) == target.charAt(i)) {
                 dp[i] = dp[i + 1];
             }
 
-            // Trie walk from position i
+            
             TrieNode cur = root;
             for (int j = i; j < n; j++) {
                 char ch = source.charAt(j);

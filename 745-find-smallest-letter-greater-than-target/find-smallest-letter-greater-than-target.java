@@ -12,7 +12,7 @@ class Solution {
             }
         }
 
-        // If low goes out of bounds, wrap around to first element
+        
         return low < letters.length ? letters[low] : letters[0];
     }
 }

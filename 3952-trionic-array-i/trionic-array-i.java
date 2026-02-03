@@ -4,20 +4,18 @@ class Solution {
         if (n < 3) return false;
 
         int i = 0;
-
-        // 1️⃣ strictly increasing
+        
         while (i + 1 < n && nums[i] < nums[i + 1]) {
             i++;
         }
         if (i == 0 || i == n - 1) return false;
-
-        // 2️⃣ strictly decreasing
+        
         while (i + 1 < n && nums[i] > nums[i + 1]) {
             i++;
         }
         if (i == n - 1) return false;
 
-        // 3️⃣ strictly increasing again
+        
         while (i + 1 < n && nums[i] < nums[i + 1]) {
             i++;
         }

@@ -24,15 +24,15 @@ class Solution {
             return 0;
         }
         
-        // Update binary number
+       
         current = current * 2 + node.val;
         
-        // If leaf node
+        
         if (node.left == null && node.right == null) {
             return current;
         }
         
-        // Recur left + right
+        
         return dfs(node.left, current) + dfs(node.right, current);
     }
 }
